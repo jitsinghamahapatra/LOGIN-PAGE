@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="container">
+
+        <div class="form-container">
+            <h2>Login</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <span>or use your email</span>
+            <input type="email" id="loginEmail" placeholder="Email">
+            <p class="error" id="loginEmailError"></p>
+            <input type="password" id="loginPassword" placeholder="Password">
+            <p class="error" id="loginPasswordError"></p>
+            <a href="forgotpassword.html">Forgot password?</a>
+            <button onclick="validateLogin()">Sign In</button>
+            <p class="toggle-text">Don't have an account? <span onclick="toggleForm()">Sign Up</span></p>
+        </div>
+
+        <div class="form-container signup-form">
+            <h2>Create Account</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-google"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <span>or use your email</span>
+            <input type="text" id="signupName" placeholder="Name">
+            <p class="error" id="signupNameError"></p>
+            <input type="email" id="signupEmail" placeholder="Email">
+            <p class="error" id="signupEmailError"></p>
+            <input type="password" id="signupPassword" placeholder="Password">
+            <p class="error" id="signupPasswordError"></p>
+            <button onclick="validateSignup()">Sign Up</button>
+            <p class="toggle-text">Already have an account? <span onclick="toggleForm()">Sign In</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
